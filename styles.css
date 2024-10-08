@@ -1,0 +1,273 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002244;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+nav li a:hover {
+    color: #e7e709;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.iconos a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.iconos a:hover {
+    color: #f39c12;
+}
+
+/* Sección Principal */
+.principal {
+    background-image: url('./imagen/imagen-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contenidouno {
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.contenidouno h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.contenidouno h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #f1c40f;
+}
+
+.contenidouno p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.botones a {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.botones a:hover {
+    background-color: #f39c12;
+}
+
+/* Banner */
+.banner {
+    background-image: url('./imagen/imagen-fondo8.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.figuras {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.figuras a {
+    color: #fff;
+    font-size: 40px;
+}
+
+.figuras a:hover {
+    color: #f39c12;
+}
+
+/* Galería */
+.galeria {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.galeria h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.galeria p {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.contenidotres {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.columna {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.columna img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.columna p {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.columna a {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.columna a:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+.footer {
+    background-color: #002244;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer h3, .footer h4 {
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer ul li a {
+    color: white;
+    font-size: 24px;
+}
+
+.footer ul li a:hover {
+    color: #f39c12;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .iconos {
+        display: none;
+    }
+
+    .contenidouno {
+        padding: 20px;
+    }
+
+    .principal {
+        height: 80vh;
+    }
+
+    .galeria {
+        padding: 30px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenidouno h1 {
+        font-size: 32px;
+    }
+
+    .contenidouno h2 {
+        font-size: 24px;
+    }
+
+    .contenidouno p {
+        font-size: 16px;
+    }
+
+    .botones a {
+        padding: 10px 20px;
+    }
+
+    .columna img {
+        height: 200px;
+    }
+}
